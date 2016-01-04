@@ -14,8 +14,8 @@ int main() {
 
     char* data_path = new char[128];
     char* bin_path = new char[128];
-    sprintf(data_path, "D:\\BGR\\in%06d.jpg",frameNumber);
-    sprintf(bin_path, "D:\\MASK\\bin%06d.png",frameNumber);
+    sprintf(data_path, "D:\\BGR\\in%06d.jpg",frameNumber); // Put frames in "D:\BGR\"
+    sprintf(bin_path, "D:\\MASK\\bin%06d.png",frameNumber); // Put masks in "D:\MASK"
     Mat BGR = imread(data_path, CV_LOAD_IMAGE_COLOR);
     Mat MASK = imread(bin_path, CV_LOAD_IMAGE_GRAYSCALE);
 
